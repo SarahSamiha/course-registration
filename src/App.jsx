@@ -38,7 +38,7 @@ function App() {
               handleSelectCourse={handleSelectCourse}
             ></Courses>
           </div>
-          <div className='md:1/5 lg:w-1/4 bg-white rounded-xl'>
+          <div className='md:1/5 lg:w-1/4 rounded-xl'>
             <MyCourses
               myCourses={myCourses}
               totalCreditHour={totalCreditHour}

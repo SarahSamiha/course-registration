@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 
 const MyCourses = ({ myCourses, totalCreditHour, totalPrice}) => {
     return (
-        <div className="p-3">
+        <div className="p-3 bg-white rounded-xl">
             <h1 className="text-sky-600 font-bold text-lg pb-3 pt-3 border-b-2">Credit Hour Remaining {20 - totalCreditHour} hr</h1>
             <div>
                 <h1 className="font-bold text-xl pb-3 pt-3">Course Name</h1>
