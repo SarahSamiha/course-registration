@@ -18,31 +18,31 @@ function App() {
       setTotalCreditHour(newTotalCreditHour);
       setTotalPrice(totalPrice + price);
     }
-    else if(newTotalCreditHour > 20){
+    else if (newTotalCreditHour > 20) {
       alert('You cannot add more than 20 credit');
     }
-    else{
+    else {
       alert('The course is already added to your list');
     }
   }
 
   return (
     <div className='bg-slate-200'>
-      <div className='max-w-[1180px] mx-auto'>
+      <div className='max-w-[360px] md:max-w-[1180px] mx-auto'>
         <header className='text-center pt-10 pb-10'>
           <Header></Header>
         </header>
-        <main className='flex flex-col-reverse md:flex-row gap-6'>
-          <div className='w-3/4'>
+        <main className='flex flex-col-reverse md:flex-row gap-6 '>
+          <div className='md:w-2/3 lg:w-3/4'>
             <Courses
               handleSelectCourse={handleSelectCourse}
             ></Courses>
           </div>
-          <div className='w-1/4 bg-white rounded-xl'>
+          <div className='md:1/3 lg:w-1/4 bg-white rounded-xl'>
             <MyCourses
               myCourses={myCourses}
               totalCreditHour={totalCreditHour}
-              totalPrice = {totalPrice}
+              totalPrice={totalPrice}
             ></MyCourses>
           </div>
         </main>
